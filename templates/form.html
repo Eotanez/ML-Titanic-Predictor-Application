@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live or Die?</title>
+    <style>
+        body{
+            background-image: url('https://s26162.pcdn.co/wp-content/uploads/sites/3/2021/02/titanic-feat1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+        </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <body>
+
+        <div class="container">
+            <div class="jumbotron" style="text-align: center">
+                <h1>Will you live?! Or will you Die?!</h1>
+                <p>Enter your details below, and find out!!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <form method="POST" action="/send" role="form", name="petform">
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" name="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLat">Gender</label>
+                            <input type="text" class="form-control" id="inputGender" name="Gender" placeholder="Gender">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLon">Age</label>
+                            <input type="text" class="form-control" id="inpoutAge" name="Age" placeholder="Age">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLat">Number of Siblings and/or Spouses aboard</label>
+                            <input type="text" class="form-control" id="inpoutSibsp" name="Sibsp" placeholder="#">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLat">Number of Parents/Children aboard</label>
+                            <input type="text" class="form-control" id="inputParch" name="Parch" placeholder="#">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLat">How much did you pay for your ticket? (between 0.00 and 550.00)</label>
+                            <input type="text" class="form-control" id="inputCost" name="Cost" placeholder="$0.00">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLat">Are you in 1st, 2nd, or 3rd Class? (Enter 1, 2 or 3)</label>
+                            <input type="text" class="form-control" id="inputClass" name="Class" placeholder="1, 2, or 3">
+                        </div>
+                        <input type="submit" value="submit" class="btn btn-default">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
