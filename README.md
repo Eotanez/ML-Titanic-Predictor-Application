@@ -24,7 +24,7 @@ To run this application locally, use the following steps:
 ##Contributors
 Thank you to the following people who have contributed to this project!
 
-    *[Enrique](https://github.com/Eotanez)
+Markup : *[Enrique](https://github.com/Eotanez)
     *[Jonathan](https://github.com/JSurgeon)
     *[Nebiat](https://github.com/nebiatabuhay)
     *[Stacey](https://github.com/staceycdougherty)
