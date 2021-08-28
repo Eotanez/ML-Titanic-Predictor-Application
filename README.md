@@ -6,10 +6,8 @@ Titanic Survival is a web application built on python/flask with an S3 database 
 
 ## Prerequisites
 Before you begin, make sure your computer meets the folowing requirements:
-\begin{itemize}
-  \You have installed python 3.7 or higher
-  \You are using a virtual environment
-\end{itemize}
+* You have installed python 3.7 or higher
+* You are using a virtual environment
 
 ## Quickstart
 To run this application locally, use the following steps:
@@ -19,7 +17,7 @@ To run this application locally, use the following steps:
 4. install dependencies
 5. run flask app
 
-##Contributors
+## Contributors
 Thank you to the following people who have contributed to this project!
 
 * [Enrique](https://github.com/Eotanez)
