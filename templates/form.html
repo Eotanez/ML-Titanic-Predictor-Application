@@ -13,6 +13,10 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
+        label {
+            color: white
+        }
         </style>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -63,33 +67,33 @@
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
-                    <form method="POST" action="/send" role="form", name="petform">
+                    <form method="POST" action="/send" role="form", name="survivalform">
                         <div class="form-group">
                             <label for="inputName">Name</label>
                             <input type="text" class="form-control" id="inputName" name="Name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="inputLat">Gender</label>
+                            <label for="inputGender">Gender</label>
                             <input type="text" class="form-control" id="inputGender" name="Gender" placeholder="Gender">
                         </div>
                         <div class="form-group">
-                            <label for="inputLon">Age</label>
+                            <label for="inputAge">Age</label>
                             <input type="text" class="form-control" id="inpoutAge" name="Age" placeholder="Age">
                         </div>
                         <div class="form-group">
-                            <label for="inputLat">Number of Siblings and/or Spouses aboard</label>
-                            <input type="text" class="form-control" id="inpoutSibsp" name="Sibsp" placeholder="#">
+                            <label for="inputSibsp">Number of Siblings and/or Spouses aboard</label>
+                            <input type="text" class="form-control" id="inputSibsp" name="Sibsp" placeholder="#">
                         </div>
                         <div class="form-group">
-                            <label for="inputLat">Number of Parents/Children aboard</label>
+                            <label for="inputParch">Number of Parents/Children aboard</label>
                             <input type="text" class="form-control" id="inputParch" name="Parch" placeholder="#">
                         </div>
                         <div class="form-group">
-                            <label for="inputLat">How much did you pay for your ticket? (between 0.00 and 550.00)</label>
+                            <label for="inputCost">How much did you pay for your ticket? (between 0.00 and 550.00)</label>
                             <input type="text" class="form-control" id="inputCost" name="Cost" placeholder="$0.00">
                         </div>
                         <div class="form-group">
-                            <label for="inputLat">Are you in 1st, 2nd, or 3rd Class? (Enter 1, 2 or 3)</label>
+                            <label for="inputClass">Are you in 1st, 2nd, or 3rd Class? (Enter 1, 2 or 3)</label>
                             <input type="text" class="form-control" id="inputClass" name="Class" placeholder="1, 2, or 3">
                         </div>
                         <input type="submit" value="submit" class="btn btn-default">
