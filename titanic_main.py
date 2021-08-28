@@ -63,6 +63,16 @@ clf.fit(X_train,y_train)
 
 def logistic_model_1(age, gender, pclass, fare):
   
+  """ 
+  Arguments:
+  Age == int 
+  Gender == string (male or female)
+  Class == int (1,2, or 3)
+  Fare == int 
+
+  Returns:
+  Survival_code == int (1 survived; 0 died)
+  """
   # handle gender encoding
   male = 0
   female = 0
@@ -115,20 +125,5 @@ def logistic_model_1(age, gender, pclass, fare):
 
   return clf.predict(user_df)[0]
   
-  
-print(logistic_model_1(1,"male",3,7))
 
 
-""" 
-def logistic_regression_1()
-
-Arguments:
-Age == int 
-Gender == string (male or female)
-Class == int (1,2, or 3)
-Fare == int 
-
-Returns:
-Survival_code == int (1 survived; 0 died)
-
-"""
