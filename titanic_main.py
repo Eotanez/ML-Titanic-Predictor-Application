@@ -98,13 +98,13 @@ def logistic_model_1(age, gender, pclass, fare):
   medium = 0
   expensive = 0
   most_expensive = 0
-  if(fare < 8.05):
+  if(float(fare) < 8.05):
     cheapest = 1
-  elif(fare < 15.7417):
+  elif(float(fare) < 15.7417):
     cheap = 1
-  elif(fare < 33.375):
+  elif(float(fare) < 33.375):
     medium = 1
-  elif(fare < 100):
+  elif(float(fare) < 100):
     expensive = 1
   else:
     most_expensive = 1
@@ -127,3 +127,4 @@ def logistic_model_1(age, gender, pclass, fare):
   
 
 
+#print(logistic_model_1(22, "male", 2, "20"))

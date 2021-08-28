@@ -16,12 +16,13 @@ app = Flask(__name__)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("templates/index.html")
+    return render_template("index.html")
 
 
 # Query the database and send the jsonified results
 @app.route("/send", methods=["GET", "POST"])
 def send():
+
     if request.method == "POST":
         name = request.form["Name"]
         age = request.form["Age"]
@@ -29,8 +30,14 @@ def send():
         fare = request.form["Cost"]
         pclass = request.form["Class"]
 
-        survived = logistic_model_1(age,gender,pclass,fare)
+        fare = float(eval(fare))
+        print("-----------111-------------")
+        print(type(fare))
+        pclass = float(eval(pclass))
+        age = int(eval(age))
 
+        survived = logistic_model_1(age,gender,pclass,fare)
+        
         # db.session.add(pet)
         # db.session.commit()
 
@@ -42,8 +49,13 @@ def send():
 
     return render_template("form.html")
 
+@app.route("/death")
+def death():
+    return render_template("death.html")
 
-
+@app.route("/live")
+def live():
+    return render_template("live.html")
 
 if __name__ == "__main__":
     app.run()
