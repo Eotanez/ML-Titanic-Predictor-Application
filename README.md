@@ -13,18 +13,16 @@ Before you begin, make sure your computer meets the folowing requirements:
 
 ## Quickstart
 To run this application locally, use the following steps:
-\begin{enumerate}
-    \Clone this repo
-    \create and/or activate your virtual environment
-    \upgrade pip
-    \install dependencies
-    \run flask app
-\end{enumerate}
+1. Clone this repo
+2. create and/or activate your virtual environment
+3. upgrade pip
+4. install dependencies
+5. run flask app
 
 ##Contributors
 Thank you to the following people who have contributed to this project!
 
-Markup : *[Enrique](https://github.com/Eotanez)
-    *[Jonathan](https://github.com/JSurgeon)
-    *[Nebiat](https://github.com/nebiatabuhay)
-    *[Stacey](https://github.com/staceycdougherty)
+* [Enrique](https://github.com/Eotanez)
+* [Jonathan](https://github.com/JSurgeon)
+* [Nebiat](https://github.com/nebiatabuhay)
+* [Stacey](https://github.com/staceycdougherty)
