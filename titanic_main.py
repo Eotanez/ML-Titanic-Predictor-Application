@@ -125,6 +125,3 @@ def logistic_model_1(age, gender, pclass, fare):
 
   return clf.predict(user_df)[0]
   
-
-
-#print(logistic_model_1(22, "male", 2, "20"))

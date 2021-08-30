@@ -40,7 +40,7 @@ def send():
         
         # db.session.add(pet)
         # db.session.commit()
-
+        print(survived)
         if (survived == 0):
             return redirect("/death", code=302)
         else:
