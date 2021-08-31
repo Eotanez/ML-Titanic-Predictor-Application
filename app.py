@@ -31,8 +31,6 @@ def send():
         pclass = request.form["Class"]
 
         fare = float(eval(fare))
-        print("-----------111-------------")
-        print(type(fare))
         pclass = float(eval(pclass))
         age = int(eval(age))
 
