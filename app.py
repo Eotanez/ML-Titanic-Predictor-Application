@@ -18,8 +18,15 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/train")
+def train():
+    return render_template("train-model.html")
 
-# Query the database and send the jsonified results
+@app.route("/test")
+def test():
+    return render_template("test-model.html")
+
+# create form html rendering
 @app.route("/send", methods=["GET", "POST"])
 def send():
 
