@@ -1,3 +1,7 @@
+from urllib.request import urlopen
+import pickle
+import pandas as pd
+
 def logistic_model_1(age, gender, pclass, fare):
   
   """ 
@@ -11,9 +15,7 @@ def logistic_model_1(age, gender, pclass, fare):
   Survival_code == int (1 survived; 0 died)
   """
 
-  import pickle 
-  import pandas as pd
-  clf = pickle.load(open("model_ml.sav", 'rb'))
+  clf = pickle.load(urlopen("https://data-bootcamp-titanic.s3.us-east-2.amazonaws.com/model_ml.sav"))
 
   # handle gender encoding
   male = 0
@@ -66,3 +68,5 @@ def logistic_model_1(age, gender, pclass, fare):
   }, index=[0])
 
   return clf.predict(user_df)[0]
+
+print(logistic_model_1(22,"male",1,200))

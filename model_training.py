@@ -1,26 +1,16 @@
 ## Python File -- functionalized version of titanic_main.ipynb
 
 # Dependencies
-import os
-import boto3
-import codecs
-import csv
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import pickle
 
-# Connect to training and test data in S3 bucket
-client = boto3.client("s3")
-s3 = boto3.client("s3")
-train_data = client.get_object(Bucket="data-bootcamp-titanic", Key="train.csv")
-test_data = client.get_object(Bucket="data-bootcamp-titanic", Key="test.csv")
 
-# Create pandas Dataframe
-train_df = pd.read_csv(train_data["Body"])
-test_df = pd.read_csv(test_data["Body"])
+# Create pandas Dataframe using S3 url
+
+train_df = pd.read_csv("https://data-bootcamp-titanic.s3.us-east-2.amazonaws.com/train.csv")
+test_df = pd.read_csv("https://data-bootcamp-titanic.s3.us-east-2.amazonaws.com/test.csv")
 
 ############################
 ## Begin Machine Learning ##
@@ -63,4 +53,3 @@ clf.fit(X_train,y_train)
 
 filename = "model_ml.sav"
 pickle.dump(clf, open(filename, 'wb'))
-
