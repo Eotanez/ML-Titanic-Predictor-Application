@@ -16,5 +16,9 @@ servicerequests = mongo.db.servicerequests
 def index():
     return render_template("index.html")
 
+if __name__ == "__main__":
+    app.run()
 
 # looking like MapBox isnt needed
+
+# mongodb+srv://titanic_user:<password>@cluster1.1e32k.mongodb.net/myFirstDatabase(Needs to be changed)?retryWrites=true&w=majority
