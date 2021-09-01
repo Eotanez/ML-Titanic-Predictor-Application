@@ -1,1 +1,1 @@
-web:gunicorn final-project-group-3:app
+web:gunicorn app:app
