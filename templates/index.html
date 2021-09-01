@@ -6,8 +6,33 @@
   <title>Titanic Survival</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../static/css/style.css">
+  <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
 </head>
+<style>
+  body {
+    background-image: url('https://i.pinimg.com/originals/3a/6e/54/3a6e54e8c6b6ee90409fdfaffadf4254.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  p {
+
+    color: black;
+  }
+
+  h3 {
+    color: black;
+  }
+
+  div.jumbotron {
+    background-color: transparent;
+  }
+
+  h1.display-4 {
+    font-weight: 900;
+  }
+</style>
 
 <body>
 
@@ -53,31 +78,31 @@
 
     <div class="row">
 
-    <div class="col-6">
-      <div class="thumbnail">
-        <img
-          src="https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTU3ODc4NjAzNTE3NTM1OTY3/titanic-wreckage-2014-hero-fix-2.jpg"
-          alt="..." class="img-thumbnail">
+      <div class="col-6">
+        <div class="thumbnail">
+          <img
+            src="https://www.history.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTU3ODc4NjAzNTE3NTM1OTY3/titanic-wreckage-2014-hero-fix-2.jpg"
+            alt="..." class="img-thumbnail">
+        </div>
+        <div class="caption">
+          <h3>Train CSV</h3>
+          <p>This is train csv</p>
+          <p><a href="/train" class="btn btn-primary" role="button">Load Data</a></p>
+        </div>
       </div>
-      <div class="caption">
-        <h3>Train CSV</h3>
-        <p>This is train csv</p>
-        <p><a href="/train" class="btn btn-primary" role="button">Load Data</a></p>
+      <div class="col-6">
+        <div class="thumbnail">
+          <img src="https://m.media-amazon.com/images/I/91skX9RJkFL._AC_SX466_.jpg" alt="..." class="img-thumbnail">
+        </div>
+        <div class="caption">
+          <h3>Will you survive?</h3>
+          <p>Play our game!</p>
+          <p><a href="/send" class="btn btn-primary" role="button">Click here to find out!</a> </p>
+        </div>
       </div>
-    </div>
-    <div class="col-6">
-      <div class="thumbnail">
-        <img src="https://m.media-amazon.com/images/I/91skX9RJkFL._AC_SX466_.jpg" alt="..." class="img-thumbnail">
-      </div>
-      <div class="caption">
-        <h3>Will you survive?</h3>
-        <p>Play our game!</p>
-        <p><a href="/send" class="btn btn-primary" role="button">Click here to find out!</a> </p>
-      </div>
-    </div>
     </div>
   </div>
-  
+
 
 
 
