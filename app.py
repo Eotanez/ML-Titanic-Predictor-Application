@@ -1,7 +1,5 @@
 # import necessary libraries
-from .titanic_main import logistic_model_1
-# from flask import PyMongo
-# from flask_cors import CORS
+from titanic_main import logistic_model_1
 import os
 from flask import (
     Flask,
@@ -10,21 +8,12 @@ from flask import (
     request,
     session,
     redirect)
-#from data_table import html_table
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
-# CORS(app)
 
-# app.config["DEBUG"] = True
-# app.config["MONGO_URI"] = os.environ["MONGO_URI"]
-
-# mongo = PyMongo(app)
-# servicerequests = mongo.db.servicerequests
-
-# create route that renders index.html template
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -52,9 +41,7 @@ def send():
         age = int(eval(age))
 
         survived = logistic_model_1(age,gender,pclass,fare)
-        
-        # db.session.add(pet)
-        # db.session.commit()
+
         print(survived)
         if (survived == 0):
             return redirect("/death", code=302)
