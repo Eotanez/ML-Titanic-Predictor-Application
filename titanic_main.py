@@ -20,7 +20,7 @@ def logistic_model_1(age, gender, pclass, fare):
   # handle gender encoding
   male = 0
   female = 0
-  if (gender == "male"):
+  if (gender.capitalize() == "Male" ):
     male = 1
   else:
     female = 1
@@ -68,5 +68,3 @@ def logistic_model_1(age, gender, pclass, fare):
   }, index=[0])
 
   return clf.predict(user_df)[0]
-
-print(logistic_model_1(22,"male",1,200))
