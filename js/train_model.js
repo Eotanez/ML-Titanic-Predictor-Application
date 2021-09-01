@@ -1,3 +1,4 @@
+console.log("Got this far");
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -10,8 +11,7 @@ function getParameterByName(name, url = window.location.href) {
 
 
 
-d3.csv('https://data-bootcamp-titanic.s3.us-east-2.amazonaws.com/train.csv').then( function(mData){
- 
+d3.csv('data/train.csv').then( function(mData){
     var Name = getParameterByName('Name');
     var Gender = getParameterByName('Gender'); 
     var Age = getParameterByName('Age'); 
