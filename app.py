@@ -1,7 +1,7 @@
 # import necessary libraries
 from titanic_main import logistic_model_1
-from flask import PyMongo
-from flask_cors import CORS
+# from flask import PyMongo
+# from flask_cors import CORS
 import os
 from flask import (
     Flask,
@@ -14,13 +14,13 @@ from flask import (
 # Flask Setup
 #################################################
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
-app.config["DEBUG"] = True
-app.config["MONGO_URI"] = os.environ["MONGO_URI"]
+# app.config["DEBUG"] = True
+# app.config["MONGO_URI"] = os.environ["MONGO_URI"]
 
-mongo = PyMongo(app)
-servicerequests = mongo.db.servicerequests
+# mongo = PyMongo(app)
+# servicerequests = mongo.db.servicerequests
 
 # create route that renders index.html template
 @app.route("/")
