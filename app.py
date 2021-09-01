@@ -4,7 +4,7 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
 app.config["DEBUG"] = True
 app.config["MONGO_URI"] = os.environ["MONGO_URI"]
