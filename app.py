@@ -1,5 +1,5 @@
 # import necessary libraries
-from titanic_main import logistic_model_1
+from .titanic_main import logistic_model_1
 # from flask import PyMongo
 # from flask_cors import CORS
 import os
