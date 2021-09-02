@@ -31,6 +31,7 @@ def test():
 def send():
 
     if request.method == "POST":
+        session["their_name"] = request.form["Name"]
         age = request.form["Age"]
         gender = request.form["Gender"]
         fare = request.form["Cost"]
@@ -53,11 +54,14 @@ def send():
 
 @app.route("/death")
 def death():
-    return render_template("death.html")
+    return render_template("death.html", name = session["their_name"])
 
 @app.route("/live")
 def live():
-    return render_template("live.html")
+    return render_template("live.html", name = session["their_name"])
 
 if __name__ == "__main__":
+    app.secret_key = "super secret key"
+    app.config["SESSION_TYPE"] = 'filesystem'
+
     app.run()
