@@ -24,3 +24,5 @@ Thank you to the following people who have contributed to this project!
 * [Jonathan](https://github.com/JSurgeon)
 * [Nebiat](https://github.com/nebiatabuhay)
 * [Stacey](https://github.com/staceycdougherty)
+
+#### note: at this point, the jupyter notebook is meant to be ran in Google Collaboraty- the inline installs will not work in a normal jupyter environment
