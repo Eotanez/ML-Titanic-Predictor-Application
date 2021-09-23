@@ -25,6 +25,3 @@ Thank you to the following people who have contributed to this project!
 * [Nebiat](https://github.com/nebiatabuhay)
 * [Stacey](https://github.com/staceycdougherty)
 
-#
-Contact: jsurgeon29@gmail.com
-LinkedIn: https://www.linkedin.com/in/jonathansurgeon/
